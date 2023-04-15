@@ -9,11 +9,11 @@ const CollectionConfig: CollectionConfigInterface = {
   // The contract name can be updated using the following command:
   // yarn rename-contract NEW_CONTRACT_NAME
   // Please DO NOT change it manually!
-  contractName: 'YourNftToken',
-  tokenName: 'My NFT Token',
-  tokenSymbol: 'MNT',
-  hiddenMetadataUri: 'ipfs://__CID__/hidden.json',
-  maxSupply: 10000,
+  contractName: 'TarotNFTsArt',
+  tokenName: 'TarotNFTs.Art',
+  tokenSymbol: 'TNA',
+  hiddenMetadataUri: 'ipfs://bafybeigeyz5alv66tektmnpteo4lnbu3b6plwibudffc5kaxmvqeqe2ita/hidden.json',
+  maxSupply: 18352,
   whitelistSale: {
     price: 0.05,
     maxMintAmountPerTx: 1,
@@ -26,7 +26,7 @@ const CollectionConfig: CollectionConfigInterface = {
     price: 0.09,
     maxMintAmountPerTx: 5,
   },
-  contractAddress: null,
+  contractAddress: "0x69626a12e925a254b33641e03c89b4d760e9ce8f",
   marketplaceIdentifier: 'my-nft-token',
   marketplaceConfig: Marketplaces.openSea,
   whitelistAddresses,
