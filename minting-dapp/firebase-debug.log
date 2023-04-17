@@ -1,0 +1,38 @@
+[debug] [2023-04-17T01:31:43.420Z] ----------------------------------------------------------------------
+[debug] [2023-04-17T01:31:43.421Z] Command:       /home/darven/.nvm/versions/node/v18.9.1/bin/node /home/darven/.npm-global/bin/firebase serve
+[debug] [2023-04-17T01:31:43.421Z] CLI Version:   11.27.0
+[debug] [2023-04-17T01:31:43.422Z] Platform:      linux
+[debug] [2023-04-17T01:31:43.422Z] Node Version:  v18.9.1
+[debug] [2023-04-17T01:31:43.422Z] Time:          Sun Apr 16 2023 20:31:43 GMT-0500 (Central Daylight Time)
+[debug] [2023-04-17T01:31:43.422Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-17T01:31:43.467Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-17T01:31:43.468Z] > authorizing via signed-in user (darven@eightfoldcapitalgroup.com)
+[debug] [2023-04-17T01:31:43.468Z] [iam] checking project tarot-minting-dapp for permissions ["firebase.projects.get"]
+[debug] [2023-04-17T01:31:43.469Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarot-minting-dapp:testIamPermissions [none]
+[debug] [2023-04-17T01:31:43.469Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarot-minting-dapp:testIamPermissions x-goog-quota-user=projects/tarot-minting-dapp
+[debug] [2023-04-17T01:31:43.470Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarot-minting-dapp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-17T01:31:43.694Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarot-minting-dapp:testIamPermissions 200
+[debug] [2023-04-17T01:31:43.694Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarot-minting-dapp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-17T01:31:43.695Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tarot-minting-dapp [none]
+[debug] [2023-04-17T01:31:43.954Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tarot-minting-dapp 200
+[debug] [2023-04-17T01:31:43.954Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tarot-minting-dapp {"projectId":"tarot-minting-dapp","projectNumber":"848811327323","displayName":"tarot-minting-dapp","name":"projects/tarot-minting-dapp","resources":{"hostingSite":"tarot-minting-dapp"},"state":"ACTIVE","etag":"1_7cfb2ff4-8775-474f-baea-c365b97b9bb8"}
+[info] 
+[info] === Serving from '/home/darven/wkspace/nft-erc721-collection/minting-dapp'...
+[info] 
+[debug] [2023-04-17T01:31:43.956Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tarot-minting-dapp/sites 
+[debug] [2023-04-17T01:31:44.314Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tarot-minting-dapp/sites 200
+[debug] [2023-04-17T01:31:44.314Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tarot-minting-dapp/sites {"sites":[{"name":"projects/tarot-minting-dapp/sites/tarot-minting-dapp","defaultUrl":"https://tarot-minting-dapp.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-17T01:31:44.315Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tarot-minting-dapp/webApps/-/config [none]
+[debug] [2023-04-17T01:31:44.767Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tarot-minting-dapp/webApps/-/config 200
+[debug] [2023-04-17T01:31:44.767Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tarot-minting-dapp/webApps/-/config {"projectId":"tarot-minting-dapp","storageBucket":"tarot-minting-dapp.appspot.com","apiKey":"AIzaSyBPERp2jEY7iKxGcRPc3zfYneSjadORIQQ","authDomain":"tarot-minting-dapp.firebaseapp.com","messagingSenderId":"848811327323"}
+[debug] [2023-04-17T01:31:44.781Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tarot-minting-dapp [none]
+[debug] [2023-04-17T01:31:44.999Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tarot-minting-dapp 200
+[debug] [2023-04-17T01:31:45.000Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tarot-minting-dapp {"projectId":"tarot-minting-dapp","projectNumber":"848811327323","displayName":"tarot-minting-dapp","name":"projects/tarot-minting-dapp","resources":{"hostingSite":"tarot-minting-dapp"},"state":"ACTIVE","etag":"1_7cfb2ff4-8775-474f-baea-c365b97b9bb8"}
+[info] i  hosting[tarot-minting-dapp]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[tarot-minting-dapp]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [17/Apr/2023:01:31:46 +0000] "GET /build/main.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/Apr/2023:01:31:46 +0000] \"GET /build/main.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [17/Apr/2023:01:31:46 +0000] "GET /build/main.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/Apr/2023:01:31:46 +0000] \"GET /build/main.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [17/Apr/2023:01:31:46 +0000] "GET /build/images/logo.png HTTP/1.1" 200 20534 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/Apr/2023:01:31:46 +0000] \"GET /build/images/logo.png HTTP/1.1\" 200 20534 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [17/Apr/2023:01:31:47 +0000] "GET /build/images/fav.png HTTP/1.1" 200 30593 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/Apr/2023:01:31:47 +0000] \"GET /build/images/fav.png HTTP/1.1\" 200 30593 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [17/Apr/2023:01:31:47 +0000] "GET /build/images/preview.png HTTP/1.1" 200 120799 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/Apr/2023:01:31:47 +0000] \"GET /build/images/preview.png HTTP/1.1\" 200 120799 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36\""}}
