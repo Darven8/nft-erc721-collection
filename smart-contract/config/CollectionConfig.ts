@@ -13,17 +13,17 @@ const CollectionConfig: CollectionConfigInterface = {
   tokenName: 'TarotNFTs.Art',
   tokenSymbol: 'TNA',
   hiddenMetadataUri: 'ipfs://bafybeigeyz5alv66tektmnpteo4lnbu3b6plwibudffc5kaxmvqeqe2ita/hidden.json',
-  maxSupply: 18352,
+  maxSupply: 7,
   whitelistSale: {
-    price: 0.05,
+    price: 0.000005,
     maxMintAmountPerTx: 1,
   },
   preSale: {
-    price: 0.07,
+    price: 0.000007,
     maxMintAmountPerTx: 2,
   },
   publicSale: {
-    price: 0.09,
+    price: 0.000009,
     maxMintAmountPerTx: 5,
   },
   contractAddress: "0x69626a12e925a254b33641e03c89b4d760e9ce8f",

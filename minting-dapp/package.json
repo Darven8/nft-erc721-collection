@@ -37,5 +37,10 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress"
+    },
+    "dependencies": {
+        "@react-firebase/auth": "^0.2.10",
+        "@react-firebase/database": "^0.3.11",
+        "firebase": "^9.19.1"
     }
 }
