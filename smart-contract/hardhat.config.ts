@@ -2,7 +2,7 @@ import fs from 'fs';
 import * as dotenv from 'dotenv';
 import { HardhatUserConfig, task } from 'hardhat/config';
 import { MerkleTree } from 'merkletreejs';
-import keccak256 from 'keccak256';
+import  keccak256 from 'keccak256';
 import '@nomiclabs/hardhat-etherscan';
 import '@nomiclabs/hardhat-waffle';
 import '@typechain/hardhat';
@@ -15,7 +15,7 @@ dotenv.config();
 /*
  * If you have issues with stuck transactions or you simply want to invest in
  * higher gas fees in order to make sure your transactions will run smoother
- * and faster, then you can update the followind value.
+ * and faster, then you can update the following value.
  * This value is used by default in any network defined in this project, but
  * please make sure to add it manually if you define any custom network.
  * 
@@ -102,11 +102,11 @@ task('rename-contract', 'Renames the smart contract replacing all occurrences in
 
 const config: HardhatUserConfig = {
   solidity: {
-    version: '0.8.9',
+    version: '0.8.11',
     settings: {
       optimizer: {
         enabled: true,
-        runs: 200,
+        runs: 10000,
       },
     },
   },
